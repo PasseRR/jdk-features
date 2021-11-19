@@ -1,6 +1,4 @@
-从JDK8开始 学习代码层面的新特性 主要包括语法糖、API介绍
-
-# [JDK8](./src/jdk8/README.MD)
+# JDK8特性
 
 1. 重复注解(@Repeatable)
 2. 接口默认方法和静态方法
