@@ -2,4 +2,7 @@
   href: index.html
 
 - text: 重复注解
-  href: repeatable_annotation.html
+  href: repeatable-annotation.html
+
+- text: 接口默认方法和静态方法
+  href: interface-default-static-method.html

@@ -5,7 +5,11 @@ package jdk8.feature2;
  * @author xiehai
  * @date 2021/11/18 18:24
  */
-public interface Interface {
+public interface Action {
+    // 名字必须重写
+    String name();
+
+    // 默认说话
     default String say() {
         return "default";
     }
