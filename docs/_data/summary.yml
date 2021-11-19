@@ -1,0 +1,60 @@
+- text: 前言
+  href: index.html
+
+- text: 创建型模式
+  href: creational.html
+  nodes:
+    - text: 单例模式
+      href: singleton.html
+    - text: 原型模式
+      href: prototype.html
+    - text: 抽象工厂模式
+      href: abstract_factory.html
+    - text: 工厂方法模式
+      href: factory_method.html
+    - text: 构造器模式
+      href: builder.html
+
+- text: 结构型模式
+  href: structural.html
+  nodes:
+    - text: 组合模式
+      href: composite.html
+    - text: 外观模式
+      href: facade.html
+    - text: 适配器模式
+      href: adapter.html
+    - text: 桥接模式
+      href: bridge.html
+    - text: 装饰器模式
+      href: decorator.html
+    - text: 享元模式
+      href: flyweight.html
+    - text: 代理模式
+      href: proxy.html
+
+- text: 行为型模式
+  href: behavioural.html
+  nodes:
+    - text: 责任链模式
+      href: chain_of_responsibility.html
+    - text: 命令模式
+      href: command.html
+    - text: 解释器模式
+      href: interpreter.html
+    - text: 迭代器模式
+      href: iterator.html
+    - text: 中介者模式
+      href: mediator.html
+    - text: 备忘录模式
+      href: memento.html
+    - text: 观察者模式
+      href: observer.html
+    - text: 状态模式
+      href: state.html
+    - text: 策略模式
+      href: strategy.html
+    - text: 模版方法模式
+      href: template_method.html
+    - text: 访问者模式
+      href: visitor.html
