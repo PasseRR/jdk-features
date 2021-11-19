@@ -1,2 +1,5 @@
 - text: 简介
   href: index.html
+
+- text: 重复注解
+  href: repeatable_annotation.html
