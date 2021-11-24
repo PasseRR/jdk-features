@@ -1,17 +1,17 @@
 - text: 0.特性简介
-  href: summary.html
+  href: index.html
 - text: 1.重复注解
   href: repeatable-annotation.html
 - text: 2.接口默认方法和静态方法
   href: interface-default-static-method.html
 - text: 3.日期/时间API
-  href: date-time/index.html
+  href: date-time-index.html
 - text: 4.Optional工具类
   href: optional.html
 - text: 5.Accumulator和Adder工具类
   href: accumulator-adder.html
 - text: 6.函数式接口
-  href: functional/index.html
+  href: functional-index.html
 - text: 7.Lambda表达式
   href: lambda.html
 - text: 8.方法引用
