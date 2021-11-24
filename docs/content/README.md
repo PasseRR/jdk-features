@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 简介
+title: 特性简介
 permalink: index.html
 ---
 
@@ -10,11 +10,12 @@ permalink: index.html
 2. 接口默认方法和静态方法
 3. Date/Time API
 4. Optional工具类
-5. Accumulator和Adder工具
+5. Accumulator和Adder工具类
 6. 函数式接口
 7. Lambda表达式
 8. 方法引用
 9. Stream API
+10. CompletableFuture异步编程
 
 ## 其他
 - [示例源码](https://github.com/PasseRR/jdk8-features)
