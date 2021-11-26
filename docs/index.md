@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: post
 title: 特性简介
-permalink: index.html
 ---
 
 ## 简介
