@@ -28,7 +28,7 @@ tipue_search:
   include:
     pages: true
   exclude:
-    files: [ /jdk8-features/search.html, /jdk8-features/404.html ]
+    files: [ 404.md, search.md ]
 
 # markdown render engine.
 markdown: kramdown
