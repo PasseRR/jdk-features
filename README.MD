@@ -1,4 +1,4 @@
-# [JDK8特性](https://PasseRR.github.io/jdk8-features)
+# [JDK8特性](https://www.xiehai.win/jdk8-features)
 
 1. 重复注解(@Repeatable)
 2. 接口默认方法和静态方法
