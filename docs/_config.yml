@@ -1,5 +1,5 @@
 # Configurations
-title: JDK8特性
+title: 各版本JDK特性
 author: PasseRR
 description: Build Jekyll site with the GitBook style.
 
@@ -12,7 +12,7 @@ cdn-url: 'https://cdn.jsdelivr.net/gh/PasseRR/jekyll-gitbook-theme'
 # 目录定义
 collections:
   chapters:
-    permalink: /:categories/:name:output_ext
+    permalink: /:category/:name:output_ext
     output: true
 rss: RSS
 
@@ -43,7 +43,7 @@ kramdown:
 markdown_ext: markdown,mkdown,mkdn,mkd,md
 
 # Permalinks
-permalink: /:categories/:name:output_ext
+permalink: /:category/:name:output_ext
 
 exclude:
   - _drafts
@@ -62,3 +62,4 @@ remote_theme: PasseRR/jekyll-gitbook-theme
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
+  - jekyll-relative-links
