@@ -12,7 +12,7 @@ cdn-url: 'https://cdn.jsdelivr.net/gh/PasseRR/jekyll-gitbook-theme'
 # 目录定义
 collections:
   chapters:
-    permalink: /:category/:name:output_ext
+    permalink: /:categories/:name:output_ext
     output: true
 rss: RSS
 
@@ -43,7 +43,7 @@ kramdown:
 markdown_ext: markdown,mkdown,mkdn,mkd,md
 
 # Permalinks
-permalink: /:category/:name:output_ext
+permalink: /:categories/:name:output_ext
 
 exclude:
   - _drafts
