@@ -6,7 +6,7 @@ description: Build Jekyll site with the GitBook style.
 version: 1.0
 gitbook_version: 3.2.3
 
-baseurl: '/jdk8-features'
+baseurl: '/jdk-features'
 # 主题cdn地址
 cdn-url: 'https://cdn.jsdelivr.net/gh/PasseRR/jekyll-gitbook-theme'
 # 目录定义
