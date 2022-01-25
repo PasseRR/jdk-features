@@ -1,6 +1,6 @@
 ---
 layout: post
-category: jdk8
+categories: [jdk8, datetime]
 title: 3.日期/时间API
 pk: 8
 k: 8.3

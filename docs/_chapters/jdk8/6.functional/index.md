@@ -1,6 +1,6 @@
 ---
 layout: post
-category: jdk8
+categories: [jdk8, functional]
 title: 6.函数式接口
 pk: 8
 k: 8.6
