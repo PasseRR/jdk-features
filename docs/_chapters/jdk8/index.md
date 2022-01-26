@@ -7,7 +7,7 @@ order: 8
 last_modified_at: 2022-01-24
 ---
 
-## 简介
+## 特性列表
 
 1. 重复注解(@Repeatable)
 2. 接口默认方法和静态方法

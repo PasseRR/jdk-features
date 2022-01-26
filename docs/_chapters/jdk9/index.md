@@ -7,7 +7,7 @@ order: 9
 last_modified_at: 2022-01-24
 ---
 
-## 简介
+## 特性列表
 
 1. 模块化
 2. 集合工厂方法
@@ -21,4 +21,4 @@ last_modified_at: 2022-01-24
 10. CompletableFuture API
 11. VarHandle
 12. 响应式流(Reactive Streams) API
-13. HTTP 2 客户端
+13. HTTP/2.0客户端孵化器

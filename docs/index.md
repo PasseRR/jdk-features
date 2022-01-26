@@ -1,10 +1,8 @@
 ---
 layout: post
-title: 特性列表
+title: JDK特性列表
 last_modified_at: 2022-01-24
 ---
-
-## 简介
 
 - [JDK8](_chapters/jdk8/index.md)
 - [JDK9](_chapters/jdk9/index.md)

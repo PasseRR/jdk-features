@@ -4,11 +4,10 @@ category: jdk10
 title: JDK10
 k: 10
 order: 10
-last_modified_at: 2022-01-24
+last_modified_at: 2022-01-26
 ---
 
-## 简介
+## 特性列表
 
 1. 局部变量类型推断
-2. 集合新增API
-3. io新增API
+2. 新增API
