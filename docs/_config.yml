@@ -59,6 +59,10 @@ hm: b57e8a51aad07a1726ab542e0141c095
 
 remote_theme: PasseRR/jekyll-gitbook-theme
 
+relative_links:
+  enabled:     true
+  collections: true
+
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap

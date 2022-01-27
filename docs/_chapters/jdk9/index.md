@@ -22,3 +22,5 @@ last_modified_at: 2022-01-24
 11. VarHandle
 12. 响应式流(Reactive Streams) API
 13. HTTP/2.0客户端孵化器
+
+[API变动](https://gunnarmorling.github.io/jdk-api-diff/jdk8-jdk9-api-diff.html){:target="_blank"}
