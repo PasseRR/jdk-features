@@ -8,9 +8,9 @@ gitbook_version: 3.2.3
 
 baseurl: '/jdk-features'
 # 主题cdn地址
-theme-cdn: 'https://fastly.jsdelivr.net/gh/PasseRR/jekyll-gitbook-theme'
+#theme-cdn: 'https://fastly.jsdelivr.net/gh/PasseRR/jekyll-gitbook-theme'
 #theme-cdn: '/jdk-features'
-cdn: 'https://fastly.jsdelivr.net/gh/PasseRR/jdk-features/docs'
+#cdn: 'https://fastly.jsdelivr.net/gh/PasseRR/jdk-features/docs'
 #cdn: '/jdk-features'
 # 目录定义
 collections:
