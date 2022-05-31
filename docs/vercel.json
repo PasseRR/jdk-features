@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/*",
-      "destination": "/jdk-features/*"
+      "source": "/jdk-features/:match*",
+      "destination": "https://jdk-features.vercel.app/:match*"
     }
   ]
 }
