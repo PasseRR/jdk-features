@@ -4,5 +4,8 @@
       "source": "/jdk-features/:match*",
       "destination": "/:match*"
     }
-  ]
+  ],
+  "github": {
+    "silent": true
+  }
 }
