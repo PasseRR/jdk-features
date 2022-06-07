@@ -65,6 +65,8 @@ remote_theme: PasseRR/jekyll-gitbook-theme
 relative_links:
   enabled:     true
   collections: true
+  
+url: "https://www.xiehai.zone"
 
 plugins:
   - jekyll-remote-theme
