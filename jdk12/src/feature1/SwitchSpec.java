@@ -18,18 +18,18 @@ public class SwitchSpec {
     public static void main(String[] args) {
         DayOfWeek dayOfWeek = DayOfWeek.MONDAY;
         // 多个case
-//        switch (dayOfWeek) {
-//            case MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY -> System.out.println("weekday");
-//            default -> System.out.println("weekend");
-//        }
-//        
-//        // switch表达式返回值
-//        int index = switch (dayOfWeek) {
-//            case MONDAY -> 1;
-//            case TUESDAY -> 4;
-//            default -> dayOfWeek.ordinal();
-//        };
+        switch (dayOfWeek) {
+            case MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY -> System.out.println("weekday");
+            default -> System.out.println("weekend");
+        }
 
-//        System.out.println(index);
+        // switch表达式返回值
+        int index = switch (dayOfWeek) {
+            case MONDAY -> 1;
+            case TUESDAY -> 4;
+            default -> dayOfWeek.ordinal();
+        };
+
+        System.out.println(index);
     }
 }
