@@ -24,5 +24,3 @@ SE平台中成为永久性的。
 - [示例源码](https://github.com/PasseRR/jdk-features)
 - [电子书源码](https://github.com/PasseRR/jdk-features/tree/main/docs)
 - [JDK版本计划及支持](https://www.oracle.com/java/technologies/java-se-support-roadmap.html)
-
-[comment]:<>(https://www.wdbyte.com/java/java-17/)
