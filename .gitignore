@@ -1,7 +1,9 @@
 .idea/
-out/
 *.iml
 
-_site/
-.jekyll-cache
-Gemfile.lock
+
+docs/.vitepress/cache
+docs/.vitepress/dist
+
+node_modules/
+package-lock.json
