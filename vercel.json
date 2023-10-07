@@ -8,7 +8,7 @@
   "redirects": [
     {
       "source": "/jdk9/11-var-handle.html",
-      "destination": "/jdk9/var-handle.html"
+      "destination": "/jdk-features/jdk9/var-handle.html"
     }
   ],
   "github": {
