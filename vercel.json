@@ -5,6 +5,12 @@
       "destination": "/:match*"
     }
   ],
+  "redirects": [
+    {
+      "source": "/jdk-features/jdk9/11-var-handle.html",
+      "destination": "/jdk-features/jdk9/var-handle.html"
+    }
+  ],
   "github": {
     "silent": true
   }
