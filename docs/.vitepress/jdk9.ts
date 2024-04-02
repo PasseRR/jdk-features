@@ -15,7 +15,7 @@ function bars() {
                 {text: 'CompletableFuture API改进', link: '/completable-future-api-improve'},
                 {text: 'VarHandle', link: '/var-handle'},
                 {text: 'Reactive Stream响应式流API', link: '/reactive-stream-api'},
-                {text: 'Http/2.0客户端(孵化器)', link: '/http2-client'},
+                {text: '🐣Http/2.0客户端', link: '/http2-client'},
             ]
         }
     };

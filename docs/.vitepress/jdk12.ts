@@ -3,7 +3,7 @@ function bars() {
         "/jdk12": {
             base: '/jdk12',
             items: [
-                {text: 'switch表达式(预览)', link: '/switch-preview'},
+                {text: '👁️‍🗨️switch表达式', link: '/switch-preview'},
                 {
                     text: '新增API',
                     base: 'jdk12/api',

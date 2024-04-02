@@ -3,8 +3,8 @@ function bars() {
         "/jdk13": {
             base: '/jdk13',
             items: [
-                {text: 'switch表达式(二次预览)', link: '/switch-preview'},
-                {text: '文本块(预览)', link: '/text-block-preview'},
+                {text: '👀switch表达式', link: '/switch-preview'},
+                {text: '👁️‍🗨️文本块', link: '/text-block-preview'},
             ]
         }
     };

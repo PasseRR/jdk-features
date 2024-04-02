@@ -2,6 +2,7 @@ import {navs, sidebars, site} from './main'
 import {defineConfig} from "vitepress";
 
 import {withMermaid} from "vitepress-plugin-mermaid";
+import taskLists from "markdown-it-task-lists";
 
 export default withMermaid(
     defineConfig({
@@ -133,6 +134,9 @@ OjAwz6MktwAAAABJRU5ErkJggg==" />
             theme: {
                 light: 'github-light',
                 dark: 'github-dark'
+            },
+            config: (md) => {
+                md.use(taskLists)
             }
         }
     })
