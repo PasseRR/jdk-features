@@ -11,9 +11,11 @@ import java.lang.annotation.Target;
  * @author xiehai
  * @date 2021/11/18 18:09
  */
+// #region snippet
 @Repeatable(Tests.class)
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Test {
     String value();
 }
+// #endregion snippet

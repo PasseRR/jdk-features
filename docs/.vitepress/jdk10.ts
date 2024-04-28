@@ -6,7 +6,8 @@ function bars() {
                 {text: '局部变量类型推断', link: '/local-variable-type-inference'},
                 {
                     text: '新增API',
-                    base: 'jdk10/api',
+                    base: '/jdk10/api',
+                    collapsed: false,
                     items: [
                         {text: 'Optional API新增', link: '/optional'},
                         {text: '集合API新增', link: '/collection'},

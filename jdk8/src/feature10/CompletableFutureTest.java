@@ -9,7 +9,8 @@ import java.util.concurrent.TimeUnit;
  * @author xiehai
  * @date 2021/12/03 10:04
  */
-public class CompletableFutureSpec {
+public class CompletableFutureTest {
+    // #region run
     public void run() {
         CompletableFuture<Void> future = CompletableFuture.runAsync(() ->
                 System.out.printf("%s says, hello world \n", Thread.currentThread().getName())
@@ -18,7 +19,9 @@ public class CompletableFutureSpec {
 
         future.join();
     }
+    // #endregion run
 
+    // #region supply
     public void supply() {
         CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> "Hello")
             .thenApplyAsync(s -> {
@@ -43,7 +46,9 @@ public class CompletableFutureSpec {
 
         System.out.println(future.join());
     }
+    // #endregion supply
 
+    // #region allOf
     public void allOf() {
         // 异步执行所有任务
         CompletableFuture.allOf(
@@ -64,7 +69,9 @@ public class CompletableFutureSpec {
             // 当所有任务完成时
             .join();
     }
+    // #endregion allOf
 
+    // #region combine
     public void combine() {
         // 异步执行带返回值的任务
         Integer join = CompletableFuture.completedFuture(1)
@@ -87,9 +94,10 @@ public class CompletableFutureSpec {
             .join();
         System.out.println(join);
     }
+    // #endregion combine
 
     public static void main(String[] args) {
-        CompletableFutureSpec spec = new CompletableFutureSpec();
+        CompletableFutureTest spec = new CompletableFutureTest();
 //        spec.run();
         spec.supply();
 //        spec.allOf();

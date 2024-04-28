@@ -5,6 +5,7 @@ package feature2;
  * @author xiehai
  * @date 2021/11/18 18:24
  */
+// #region snippet
 public interface Action {
     // 名字必须重写
     String name();
@@ -18,3 +19,4 @@ public interface Action {
         return "static";
     }
 }
+// #endregion snippet

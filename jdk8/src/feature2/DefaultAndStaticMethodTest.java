@@ -5,7 +5,8 @@ package feature2;
  * @author xiehai
  * @date 2021/11/18 18:24
  */
-public class Feature2 implements Action {
+// #region snippet
+public class DefaultAndStaticMethodTest implements Action {
     @Override
     public String name() {
         return "default";
@@ -25,7 +26,8 @@ public class Feature2 implements Action {
 
     public static void main(String[] args) {
         assert "static".equals(Action.call());
-        assert "default".equals(new Feature2().say());
+        assert "default".equals(new DefaultAndStaticMethodTest().say());
         assert "override".equals(new OverrideAction().say());
     }
 }
+// #endregion snippet

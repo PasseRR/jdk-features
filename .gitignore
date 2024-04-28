@@ -1,6 +1,7 @@
 .idea/
 *.iml
 
+out/
 
 docs/.vitepress/cache
 docs/.vitepress/dist

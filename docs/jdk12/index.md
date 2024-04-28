@@ -1,6 +1,4 @@
-# JDK12
-
-## 特性列表
+# JDK12特性列表
 
 - [👁️‍🗨️switch表达式](./switch-preview.md)
 - 新增API

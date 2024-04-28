@@ -6,7 +6,8 @@ function bars() {
                 {text: '👁️‍🗨️switch表达式', link: '/switch-preview'},
                 {
                     text: '新增API',
-                    base: 'jdk12/api',
+                    base: '/jdk12/api',
+                    collapsed: false,
                     items: [
                         {text: 'Files API新增', link: '/files'},
                         {text: '简化数字格式API', link: '/number-compact'},

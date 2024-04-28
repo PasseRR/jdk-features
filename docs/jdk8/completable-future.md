@@ -8,6 +8,7 @@
 及`CompletionStage`可以完成一些Future不能做到的事情。
 
 ## CompletionStage接口
+
 `CompletionStage`分为有返回值(CompletionStage&lt;T>)与无返回值(CompletionStage&lt;Void>)两种，类似Runnable和Callable。
 
 接口方法中频繁出现了一些动词`run`、`accept`、`apply`、`handle`、`combine`、
@@ -33,120 +34,42 @@
 ## CompletableFuture API
 
 1. 创建CompletableFuture的方式
-    
-    |方法|描述
-    |:---|:---|
-    |constructor|使用构造方法直接new|
-    |`static`runAsync|无返回值任务|
-    |`static`supplyAsync|有返回值任务|
-    |`static`allOf|无返回值任务，当所有任务完成时返回|
-    |`static`anyOf|有返回值任务，当惹你任务完成时返回|
-    |`static`completedFuture|有返回值任务，以给定值为任务返回值|
+
+   |方法|描述
+   |:---|:---|
+   |constructor|使用构造方法直接new|
+   |`static`runAsync|无返回值任务|
+   |`static`supplyAsync|有返回值任务|
+   |`static`allOf|无返回值任务，当所有任务完成时返回|
+   |`static`anyOf|有返回值任务，当惹你任务完成时返回|
+   |`static`completedFuture|有返回值任务，以给定值为任务返回值|
 
 2. 除CompletionStage和Future之外的方法
 
-    |方法|描述|
-    |:---|:---|
-    |complete|若任务未完成，以给定值完成任务|
-    |completeExceptionally|若任务未完成，以给定异常完成任务|
-    |getNow|若任务未完成以给定值立即返回，否则返回任务值|
-    |join|类似`Future`的get方法，但是若有异常抛出，建议获取阻塞值使用这个方法|
-    |obtrudeValue|强制以给定值完成任务|
-    |obtrudeException|强制以给定异常完成任务|
-    |getNumberOfDependents|返回当前任务待完成任务的数量，设计用于系统监控|
+   |方法|描述|
+   |:---|:---|
+   |complete|若任务未完成，以给定值完成任务|
+   |completeExceptionally|若任务未完成，以给定异常完成任务|
+   |getNow|若任务未完成以给定值立即返回，否则返回任务值|
+   |join|类似`Future`的get方法，但是若有异常抛出，建议获取阻塞值使用这个方法|
+   |obtrudeValue|强制以给定值完成任务|
+   |obtrudeException|强制以给定异常完成任务|
+   |getNumberOfDependents|返回当前任务待完成任务的数量，设计用于系统监控|
 
 ## CompletableFuture示例
 
 ### 异步执行无返回值
 
-```java
-public void run() {
-    CompletableFuture<Void> future = CompletableFuture.runAsync(() ->
-            System.out.printf("%s says, hello world \n", Thread.currentThread().getName())
-        )
-        .thenRunAsync(() -> System.out.printf("%s says, hello world again\n", Thread.currentThread().getName()));
-
-    future.join();
-}
-```
+<<< @/../jdk8/src/feature10/CompletableFutureTest.java#run
 
 ### 异步执行有返回值
 
-```java
-public void supply() {
-    CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> "Hello")
-        .thenApplyAsync(s -> {
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException ignore) {
-            }
-            System.out.printf("%s says, %s\n", Thread.currentThread().getName(), s);
-            return s + " World";
-        })
-        .thenApplyAsync(s -> {
-            System.out.printf("%s says, %s\n", Thread.currentThread().getName(), s);
-            return s + "!";
-        })
-        .whenComplete((s, e) -> {
-            if (Objects.nonNull(e)) {
-                System.out.println(e.getMessage());
-            }
-
-            System.out.printf("%s says, %s\n", Thread.currentThread().getName(), s);
-        });
-
-    System.out.println(future.join());
-}
-```
+<<< @/../jdk8/src/feature10/CompletableFutureTest.java#supply
 
 ### 多个任务异步执行
 
-```java
-public void allOf() {
-    // 异步执行所有任务
-    CompletableFuture.allOf(
-            CompletableFuture.runAsync(() ->
-                System.out.printf("%s says, hello world \n", Thread.currentThread().getName())
-            ),
-            CompletableFuture.runAsync(() ->
-                System.out.printf("%s says, hello world again\n", Thread.currentThread().getName())
-            ),
-            CompletableFuture.runAsync(() -> {
-                try {
-                    TimeUnit.SECONDS.sleep(2);
-                } catch (InterruptedException ignore) {
-                }
-                System.out.printf("%s says, hello world \n", Thread.currentThread().getName());
-            })
-        )
-        // 当所有任务完成时
-        .join();
-}
-```
+<<< @/../jdk8/src/feature10/CompletableFutureTest.java#allOf
 
 ### 多个任务组合异步执行
 
-```java
-public void combine() {
-    // 异步执行带返回值的任务
-    Integer join = CompletableFuture.completedFuture(1)
-        .thenCombineAsync(CompletableFuture.supplyAsync(() -> {
-            try {
-                TimeUnit.SECONDS.sleep(3);
-            } catch (InterruptedException ignore) {
-            }
-            System.out.printf("calc 2 is thread %s\n", Thread.currentThread().getName());
-            return 2;
-        }), Integer::sum)
-        .thenCombineAsync(CompletableFuture.supplyAsync(() -> {
-            try {
-                TimeUnit.SECONDS.sleep(2);
-            } catch (InterruptedException ignore) {
-            }
-            System.out.printf("calc 3 is thread %s\n", Thread.currentThread().getName());
-            return 3;
-        }), Integer::sum)
-        .join();
-    System.out.println(join);
-}
-```
+<<< @/../jdk8/src/feature10/CompletableFutureTest.java#combine

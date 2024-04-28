@@ -1,6 +1,4 @@
-# jdk10
-
-## 特性列表
+# JDK10特性列表
 
 - [局部变量类型推断](./local-variable-type-inference.md)
 - 新增API
