@@ -5,7 +5,7 @@
 - Date/Time API
 - Optional工具类
 - Accumulator和Adder工具类
-- 函数式接口
+- [函数式接口](functional/index.md)
 - Lambda表达式
 - 方法引用
 - Stream API
