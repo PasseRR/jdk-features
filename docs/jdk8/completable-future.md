@@ -60,16 +60,16 @@
 
 ### 异步执行无返回值
 
-<<< @/../jdk8/src/feature10/CompletableFutureTest.java#run
+<<< @/../jdk8/src/feature8/CompletableFutureTest.java#run
 
 ### 异步执行有返回值
 
-<<< @/../jdk8/src/feature10/CompletableFutureTest.java#supply
+<<< @/../jdk8/src/feature8/CompletableFutureTest.java#supply
 
 ### 多个任务异步执行
 
-<<< @/../jdk8/src/feature10/CompletableFutureTest.java#allOf
+<<< @/../jdk8/src/feature8/CompletableFutureTest.java#allOf
 
 ### 多个任务组合异步执行
 
-<<< @/../jdk8/src/feature10/CompletableFutureTest.java#combine
+<<< @/../jdk8/src/feature8/CompletableFutureTest.java#combine
